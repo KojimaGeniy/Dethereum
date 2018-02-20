@@ -1,0 +1,2089 @@
+{
+  "contractName": "Game",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "plN",
+          "type": "uint256"
+        },
+        {
+          "name": "betV",
+          "type": "uint256"
+        }
+      ],
+      "name": "InitializeSession",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "EnterSession",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x60606040526000600155341561001457600080fd5b336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061058e806100636000396000f300606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ccfd60b1461007257806349c5f8c6146100875780638da5cb5b146100b3578063f95812c414610108575b341561006d57600080fd5b600080fd5b341561007d57600080fd5b610085610120565b005b341561009257600080fd5b6100b1600480803590602001909190803590602001909190505061017d565b005b34156100be57600080fd5b6100c66102c6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61011e60048080359060200190919050506102eb565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561017b57600080fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101da57600080fd5b6001805401816000018190555082816002018190555081816004018190555060008160050160006101000a81548160ff0219169083600281111561021a57fe5b02179055506002805480600101828161023391906103c6565b916000526020600020906006020160008390919091506000820154816000015560018201816001019080546102699291906103f8565b506002820154816002015560038201548160030155600482015481600401556005820160009054906101000a900460ff168160050160006101000a81548160ff021916908360028111156102b957fe5b0217905550505050505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60036000828152602001908152602001600020600401543414151561030f57600080fd5b6003600082815260200190815260200160002060020154600360008381526020019081526020016000206001018054905010151561034c57600080fd5b600360008281526020019081526020016000206001018054806001018281610374919061044a565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b8154818355818115116103f3576006028160060283600052602060002091820191016103f29190610476565b5b505050565b8280548282559060005260206000209081019282156104395760005260206000209182015b8281111561043857825482559160010191906001019061041d565b5b50905061044691906104d9565b5090565b81548183558181151161047157818360005260206000209182019101610470919061051c565b5b505050565b6104d691905b808211156104d25760008082016000905560018201600061049d9190610541565b6002820160009055600382016000905560048201600090556005820160006101000a81549060ff02191690555060060161047c565b5090565b90565b61051991905b8082111561051557600081816101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055506001016104df565b5090565b90565b61053e91905b8082111561053a576000816000905550600101610522565b5090565b90565b508054600082559060005260206000209081019061055f919061051c565b505600a165627a7a72305820bb299290456e5a9fd45e90f1ee00baf9c7336b38d0b73643cefb2591c1c1eb250029",
+  "deployedBytecode": "0x606060405260043610610062576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680633ccfd60b1461007257806349c5f8c6146100875780638da5cb5b146100b3578063f95812c414610108575b341561006d57600080fd5b600080fd5b341561007d57600080fd5b610085610120565b005b341561009257600080fd5b6100b1600480803590602001909190803590602001909190505061017d565b005b34156100be57600080fd5b6100c66102c6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61011e60048080359060200190919050506102eb565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561017b57600080fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161415156101da57600080fd5b6001805401816000018190555082816002018190555081816004018190555060008160050160006101000a81548160ff0219169083600281111561021a57fe5b02179055506002805480600101828161023391906103c6565b916000526020600020906006020160008390919091506000820154816000015560018201816001019080546102699291906103f8565b506002820154816002015560038201548160030155600482015481600401556005820160009054906101000a900460ff168160050160006101000a81548160ff021916908360028111156102b957fe5b0217905550505050505050565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60036000828152602001908152602001600020600401543414151561030f57600080fd5b6003600082815260200190815260200160002060020154600360008381526020019081526020016000206001018054905010151561034c57600080fd5b600360008281526020019081526020016000206001018054806001018281610374919061044a565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050565b8154818355818115116103f3576006028160060283600052602060002091820191016103f29190610476565b5b505050565b8280548282559060005260206000209081019282156104395760005260206000209182015b8281111561043857825482559160010191906001019061041d565b5b50905061044691906104d9565b5090565b81548183558181151161047157818360005260206000209182019101610470919061051c565b5b505050565b6104d691905b808211156104d25760008082016000905560018201600061049d9190610541565b6002820160009055600382016000905560048201600090556005820160006101000a81549060ff02191690555060060161047c565b5090565b90565b61051991905b8082111561051557600081816101000a81549073ffffffffffffffffffffffffffffffffffffffff0219169055506001016104df565b5090565b90565b61053e91905b8082111561053a576000816000905550600101610522565b5090565b90565b508054600082559060005260206000209081019061055f919061051c565b505600a165627a7a72305820bb299290456e5a9fd45e90f1ee00baf9c7336b38d0b73643cefb2591c1c1eb250029",
+  "sourceMap": "26:1627:0:-;;;92:1;74:19;;675:58;;;;;;;;716:10;708:5;;:18;;;;;;;;;;;;;;;;;;26:1627;;;;;;",
+  "deployedSourceMap": "26:1627:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1636:8;;;1458:82;;;;;;;;;;;;;;739:302;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;47:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1047:405;;;;;;;;;;;;;;;;;;1458:82;627:5;;;;;;;;;;;613:19;;:10;:19;;;;609:42;;;643:8;;;609:42;1458:82::o;739:302::-;836:15;627:5;;;;;;;;;;;613:19;;:10;:19;;;;609:42;;;643:8;;;609:42;884:1;874:7;;:11;861:7;:10;;:24;;;;914:3;895:7;:16;;:22;;;;946:4;927:7;:16;;:23;;;;983:19;960:7;:20;;;:42;;;;;;;;;;;;;;;;;;;;;;;;1012:8;:22;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;1026:7;1012:22;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;739:302;;;:::o;47:20::-;;;;;;;;;;;;;:::o;1047:405::-;1127:9;:13;1137:2;1127:13;;;;;;;;;;;:22;;;1114:9;:35;1106:44;;;;;;;;1197:9;:13;1207:2;1197:13;;;;;;;;;;;:22;;;1168:9;:13;1178:2;1168:13;;;;;;;;;;;:19;;:26;;;;:51;1160:60;;;;;;;;1230:9;:13;1240:2;1230:13;;;;;;;;;;;:19;;:36;;;;;;;;;;;:::i;:::-;;;;;;;;;;1255:10;1230:36;;;;;;;;;;;;;;;;;;;;;;;1047:405;:::o;26:1627::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::o",
+  "source": "pragma solidity ^0.4.17;\n\ncontract Game {\n\n    address public owner;\n\n    uint256 counter = 0; //what, just do length bro\n\n    struct Session {\n        uint256 id;\n        address[] slots;\n        uint256 playersN;\n        uint256 winnerN; //may be needless\n        uint betValue;\n        SessionState currentState;\n    }\n//massive addressov\n    Session[] sessions;     //something like this, both need to be controlled for overflow\n    mapping(uint256 => Session) sessionsM;\n\n    //mapping of struct and var numStructs\n    enum SessionState {noGame, gameStarted, gameEnded}\n\n    modifier ownerOnly {\n        if (msg.sender != owner) \n        revert();\n        _;\n    }\n\n    function Game() public {\n        owner = msg.sender;\n    }\n\n    function InitializeSession(uint256 plN,/*players massive*/ uint betV) ownerOnly public {\n        Session session;\n        session.id = counter + 1;\n        session.playersN = plN;\n        session.betValue = betV;\n        session.currentState = SessionState.noGame;\n        sessions.push(session);\n    }\n\n    function EnterSession(uint256 id) payable public {\n        require(msg.value == sessionsM[id].betValue);\n        require(sessionsM[id].slots.length < sessionsM[id].playersN);\n        sessionsM[id].slots.push(msg.sender);\n        //Round has limit of players\n        //Take their money\n        //Check how much are they paying\n        //Check if they entering through the game and not scamming (how?)\n    }\n\n    function withdraw() ownerOnly public {\n        //Pay the winner his winnings\n    }\n\n    //function refund half if player disconnected before the start\n\n    function () {\n        revert();\n    }\n}",
+  "sourcePath": "/home/andrew/truffleTest/project/contracts/Game.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/home/andrew/truffleTest/project/contracts/Game.sol",
+      "exportedSymbols": {
+        "Game": [
+          150
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            150
+          ],
+          "name": "Game",
+          "scope": 151
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "owner",
+              "scope": 150,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "type": "address"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "47:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "47:20:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "counter",
+              "scope": 150,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 4,
+                "name": "ElementaryTypeName",
+                "src": "74:7:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "30",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "number",
+                  "type": "int_const 0",
+                  "value": "0"
+                },
+                "id": 5,
+                "name": "Literal",
+                "src": "92:1:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "74:19:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Game.Session",
+              "name": "Session",
+              "scope": 150,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "id",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "152:7:0"
+                  }
+                ],
+                "id": 8,
+                "name": "VariableDeclaration",
+                "src": "152:10:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "slots",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address[] storage pointer",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "address[] storage pointer"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 9,
+                        "name": "ElementaryTypeName",
+                        "src": "172:7:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "ArrayTypeName",
+                    "src": "172:9:0"
+                  }
+                ],
+                "id": 11,
+                "name": "VariableDeclaration",
+                "src": "172:15:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "playersN",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 12,
+                    "name": "ElementaryTypeName",
+                    "src": "197:7:0"
+                  }
+                ],
+                "id": 13,
+                "name": "VariableDeclaration",
+                "src": "197:16:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "winnerN",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 14,
+                    "name": "ElementaryTypeName",
+                    "src": "223:7:0"
+                  }
+                ],
+                "id": 15,
+                "name": "VariableDeclaration",
+                "src": "223:15:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "betValue",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 16,
+                    "name": "ElementaryTypeName",
+                    "src": "266:4:0"
+                  }
+                ],
+                "id": 17,
+                "name": "VariableDeclaration",
+                "src": "266:13:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "currentState",
+                  "scope": 20,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "enum Game.SessionState",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "SessionState",
+                      "referencedDeclaration": 31,
+                      "type": "enum Game.SessionState"
+                    },
+                    "id": 18,
+                    "name": "UserDefinedTypeName",
+                    "src": "289:12:0"
+                  }
+                ],
+                "id": 19,
+                "name": "VariableDeclaration",
+                "src": "289:25:0"
+              }
+            ],
+            "id": 20,
+            "name": "StructDefinition",
+            "src": "127:194:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "sessions",
+              "scope": 150,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct Game.Session storage ref[] storage ref",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct Game.Session storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Session",
+                      "referencedDeclaration": 20,
+                      "type": "struct Game.Session storage pointer"
+                    },
+                    "id": 21,
+                    "name": "UserDefinedTypeName",
+                    "src": "346:7:0"
+                  }
+                ],
+                "id": 22,
+                "name": "ArrayTypeName",
+                "src": "346:9:0"
+              }
+            ],
+            "id": 23,
+            "name": "VariableDeclaration",
+            "src": "346:18:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "sessionsM",
+              "scope": 150,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct Game.Session storage ref)",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct Game.Session storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 24,
+                    "name": "ElementaryTypeName",
+                    "src": "445:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Session",
+                      "referencedDeclaration": 20,
+                      "type": "struct Game.Session storage pointer"
+                    },
+                    "id": 25,
+                    "name": "UserDefinedTypeName",
+                    "src": "456:7:0"
+                  }
+                ],
+                "id": 26,
+                "name": "Mapping",
+                "src": "437:27:0"
+              }
+            ],
+            "id": 27,
+            "name": "VariableDeclaration",
+            "src": "437:37:0"
+          },
+          {
+            "attributes": {
+              "canonicalName": "Game.SessionState",
+              "name": "SessionState"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "noGame"
+                },
+                "id": 28,
+                "name": "EnumValue",
+                "src": "543:6:0"
+              },
+              {
+                "attributes": {
+                  "name": "gameStarted"
+                },
+                "id": 29,
+                "name": "EnumValue",
+                "src": "551:11:0"
+              },
+              {
+                "attributes": {
+                  "name": "gameEnded"
+                },
+                "id": 30,
+                "name": "EnumValue",
+                "src": "564:9:0"
+              }
+            ],
+            "id": 31,
+            "name": "EnumDefinition",
+            "src": "524:50:0"
+          },
+          {
+            "attributes": {
+              "name": "ownerOnly",
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 32,
+                "name": "ParameterList",
+                "src": "599:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "falseBody": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "commonType": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "!=",
+                          "type": "bool"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 162,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 33,
+                                "name": "Identifier",
+                                "src": "613:3:0"
+                              }
+                            ],
+                            "id": 34,
+                            "name": "MemberAccess",
+                            "src": "613:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 35,
+                            "name": "Identifier",
+                            "src": "627:5:0"
+                          }
+                        ],
+                        "id": 36,
+                        "name": "BinaryOperation",
+                        "src": "613:19:0"
+                      },
+                      {
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "tuple()",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    null
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 166,
+                                  "type": "function () pure",
+                                  "value": "revert"
+                                },
+                                "id": 37,
+                                "name": "Identifier",
+                                "src": "643:6:0"
+                              }
+                            ],
+                            "id": 38,
+                            "name": "FunctionCall",
+                            "src": "643:8:0"
+                          }
+                        ],
+                        "id": 39,
+                        "name": "ExpressionStatement",
+                        "src": "643:8:0"
+                      }
+                    ],
+                    "id": 40,
+                    "name": "IfStatement",
+                    "src": "609:42:0"
+                  },
+                  {
+                    "id": 41,
+                    "name": "PlaceholderStatement",
+                    "src": "661:1:0"
+                  }
+                ],
+                "id": 42,
+                "name": "Block",
+                "src": "599:70:0"
+              }
+            ],
+            "id": 43,
+            "name": "ModifierDefinition",
+            "src": "580:89:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": true,
+              "modifiers": [
+                null
+              ],
+              "name": "Game",
+              "payable": false,
+              "scope": 150,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 44,
+                "name": "ParameterList",
+                "src": "688:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 45,
+                "name": "ParameterList",
+                "src": "698:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 46,
+                            "name": "Identifier",
+                            "src": "708:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 162,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 47,
+                                "name": "Identifier",
+                                "src": "716:3:0"
+                              }
+                            ],
+                            "id": 48,
+                            "name": "MemberAccess",
+                            "src": "716:10:0"
+                          }
+                        ],
+                        "id": 49,
+                        "name": "Assignment",
+                        "src": "708:18:0"
+                      }
+                    ],
+                    "id": 50,
+                    "name": "ExpressionStatement",
+                    "src": "708:18:0"
+                  }
+                ],
+                "id": 51,
+                "name": "Block",
+                "src": "698:35:0"
+              }
+            ],
+            "id": 52,
+            "name": "FunctionDefinition",
+            "src": "675:58:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "InitializeSession",
+              "payable": false,
+              "scope": 150,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "plN",
+                      "scope": 98,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 53,
+                        "name": "ElementaryTypeName",
+                        "src": "766:7:0"
+                      }
+                    ],
+                    "id": 54,
+                    "name": "VariableDeclaration",
+                    "src": "766:11:0"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "betV",
+                      "scope": 98,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 55,
+                        "name": "ElementaryTypeName",
+                        "src": "798:4:0"
+                      }
+                    ],
+                    "id": 56,
+                    "name": "VariableDeclaration",
+                    "src": "798:9:0"
+                  }
+                ],
+                "id": 57,
+                "name": "ParameterList",
+                "src": "765:43:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 60,
+                "name": "ParameterList",
+                "src": "826:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 43,
+                      "type": "modifier ()",
+                      "value": "ownerOnly"
+                    },
+                    "id": 58,
+                    "name": "Identifier",
+                    "src": "809:9:0"
+                  }
+                ],
+                "id": 59,
+                "name": "ModifierInvocation",
+                "src": "809:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        null
+                      ],
+                      "initialValue": null
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "session",
+                          "scope": 98,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "struct Game.Session storage pointer",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "contractScope": null,
+                              "name": "Session",
+                              "referencedDeclaration": 20,
+                              "type": "struct Game.Session storage pointer"
+                            },
+                            "id": 61,
+                            "name": "UserDefinedTypeName",
+                            "src": "836:7:0"
+                          }
+                        ],
+                        "id": 62,
+                        "name": "VariableDeclaration",
+                        "src": "836:15:0"
+                      }
+                    ],
+                    "id": 63,
+                    "name": "VariableDeclarationStatement",
+                    "src": "836:15:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "id",
+                              "referencedDeclaration": 8,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 62,
+                                  "type": "struct Game.Session storage pointer",
+                                  "value": "session"
+                                },
+                                "id": 64,
+                                "name": "Identifier",
+                                "src": "861:7:0"
+                              }
+                            ],
+                            "id": 66,
+                            "name": "MemberAccess",
+                            "src": "861:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "+",
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 6,
+                                  "type": "uint256",
+                                  "value": "counter"
+                                },
+                                "id": 67,
+                                "name": "Identifier",
+                                "src": "874:7:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "hexvalue": "31",
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "subdenomination": null,
+                                  "token": "number",
+                                  "type": "int_const 1",
+                                  "value": "1"
+                                },
+                                "id": 68,
+                                "name": "Literal",
+                                "src": "884:1:0"
+                              }
+                            ],
+                            "id": 69,
+                            "name": "BinaryOperation",
+                            "src": "874:11:0"
+                          }
+                        ],
+                        "id": 70,
+                        "name": "Assignment",
+                        "src": "861:24:0"
+                      }
+                    ],
+                    "id": 71,
+                    "name": "ExpressionStatement",
+                    "src": "861:24:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "playersN",
+                              "referencedDeclaration": 13,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 62,
+                                  "type": "struct Game.Session storage pointer",
+                                  "value": "session"
+                                },
+                                "id": 72,
+                                "name": "Identifier",
+                                "src": "895:7:0"
+                              }
+                            ],
+                            "id": 74,
+                            "name": "MemberAccess",
+                            "src": "895:16:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 54,
+                              "type": "uint256",
+                              "value": "plN"
+                            },
+                            "id": 75,
+                            "name": "Identifier",
+                            "src": "914:3:0"
+                          }
+                        ],
+                        "id": 76,
+                        "name": "Assignment",
+                        "src": "895:22:0"
+                      }
+                    ],
+                    "id": 77,
+                    "name": "ExpressionStatement",
+                    "src": "895:22:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "betValue",
+                              "referencedDeclaration": 17,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 62,
+                                  "type": "struct Game.Session storage pointer",
+                                  "value": "session"
+                                },
+                                "id": 78,
+                                "name": "Identifier",
+                                "src": "927:7:0"
+                              }
+                            ],
+                            "id": 80,
+                            "name": "MemberAccess",
+                            "src": "927:16:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 56,
+                              "type": "uint256",
+                              "value": "betV"
+                            },
+                            "id": 81,
+                            "name": "Identifier",
+                            "src": "946:4:0"
+                          }
+                        ],
+                        "id": 82,
+                        "name": "Assignment",
+                        "src": "927:23:0"
+                      }
+                    ],
+                    "id": 83,
+                    "name": "ExpressionStatement",
+                    "src": "927:23:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "enum Game.SessionState"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "currentState",
+                              "referencedDeclaration": 19,
+                              "type": "enum Game.SessionState"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 62,
+                                  "type": "struct Game.Session storage pointer",
+                                  "value": "session"
+                                },
+                                "id": 84,
+                                "name": "Identifier",
+                                "src": "960:7:0"
+                              }
+                            ],
+                            "id": 86,
+                            "name": "MemberAccess",
+                            "src": "960:20:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "member_name": "noGame",
+                              "referencedDeclaration": null,
+                              "type": "enum Game.SessionState"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 31,
+                                  "type": "type(enum Game.SessionState)",
+                                  "value": "SessionState"
+                                },
+                                "id": 87,
+                                "name": "Identifier",
+                                "src": "983:12:0"
+                              }
+                            ],
+                            "id": 88,
+                            "name": "MemberAccess",
+                            "src": "983:19:0"
+                          }
+                        ],
+                        "id": 89,
+                        "name": "Assignment",
+                        "src": "960:42:0"
+                      }
+                    ],
+                    "id": 90,
+                    "name": "ExpressionStatement",
+                    "src": "960:42:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_Session_$20_storage_ptr",
+                                  "typeString": "struct Game.Session storage pointer"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct Game.Session storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 23,
+                                  "type": "struct Game.Session storage ref[] storage ref",
+                                  "value": "sessions"
+                                },
+                                "id": 91,
+                                "name": "Identifier",
+                                "src": "1012:8:0"
+                              }
+                            ],
+                            "id": 93,
+                            "name": "MemberAccess",
+                            "src": "1012:13:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 62,
+                              "type": "struct Game.Session storage pointer",
+                              "value": "session"
+                            },
+                            "id": 94,
+                            "name": "Identifier",
+                            "src": "1026:7:0"
+                          }
+                        ],
+                        "id": 95,
+                        "name": "FunctionCall",
+                        "src": "1012:22:0"
+                      }
+                    ],
+                    "id": 96,
+                    "name": "ExpressionStatement",
+                    "src": "1012:22:0"
+                  }
+                ],
+                "id": 97,
+                "name": "Block",
+                "src": "826:215:0"
+              }
+            ],
+            "id": 98,
+            "name": "FunctionDefinition",
+            "src": "739:302:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "EnterSession",
+              "payable": true,
+              "scope": 150,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "id",
+                      "scope": 136,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 99,
+                        "name": "ElementaryTypeName",
+                        "src": "1069:7:0"
+                      }
+                    ],
+                    "id": 100,
+                    "name": "VariableDeclaration",
+                    "src": "1069:10:0"
+                  }
+                ],
+                "id": 101,
+                "name": "ParameterList",
+                "src": "1068:12:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 102,
+                "name": "ParameterList",
+                "src": "1096:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 165,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 103,
+                            "name": "Identifier",
+                            "src": "1106:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "==",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "value",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 162,
+                                      "type": "msg",
+                                      "value": "msg"
+                                    },
+                                    "id": 104,
+                                    "name": "Identifier",
+                                    "src": "1114:3:0"
+                                  }
+                                ],
+                                "id": 105,
+                                "name": "MemberAccess",
+                                "src": "1114:9:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "betValue",
+                                  "referencedDeclaration": 17,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct Game.Session storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 27,
+                                          "type": "mapping(uint256 => struct Game.Session storage ref)",
+                                          "value": "sessionsM"
+                                        },
+                                        "id": 106,
+                                        "name": "Identifier",
+                                        "src": "1127:9:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 100,
+                                          "type": "uint256",
+                                          "value": "id"
+                                        },
+                                        "id": 107,
+                                        "name": "Identifier",
+                                        "src": "1137:2:0"
+                                      }
+                                    ],
+                                    "id": 108,
+                                    "name": "IndexAccess",
+                                    "src": "1127:13:0"
+                                  }
+                                ],
+                                "id": 109,
+                                "name": "MemberAccess",
+                                "src": "1127:22:0"
+                              }
+                            ],
+                            "id": 110,
+                            "name": "BinaryOperation",
+                            "src": "1114:35:0"
+                          }
+                        ],
+                        "id": 111,
+                        "name": "FunctionCall",
+                        "src": "1106:44:0"
+                      }
+                    ],
+                    "id": 112,
+                    "name": "ExpressionStatement",
+                    "src": "1106:44:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_bool",
+                                  "typeString": "bool"
+                                }
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 165,
+                              "type": "function (bool) pure",
+                              "value": "require"
+                            },
+                            "id": 113,
+                            "name": "Identifier",
+                            "src": "1160:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "commonType": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              },
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "operator": "<",
+                              "type": "bool"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "length",
+                                  "referencedDeclaration": null,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "slots",
+                                      "referencedDeclaration": 11,
+                                      "type": "address[] storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "isConstant": false,
+                                          "isLValue": true,
+                                          "isPure": false,
+                                          "lValueRequested": false,
+                                          "type": "struct Game.Session storage ref"
+                                        },
+                                        "children": [
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 27,
+                                              "type": "mapping(uint256 => struct Game.Session storage ref)",
+                                              "value": "sessionsM"
+                                            },
+                                            "id": 114,
+                                            "name": "Identifier",
+                                            "src": "1168:9:0"
+                                          },
+                                          {
+                                            "attributes": {
+                                              "argumentTypes": null,
+                                              "overloadedDeclarations": [
+                                                null
+                                              ],
+                                              "referencedDeclaration": 100,
+                                              "type": "uint256",
+                                              "value": "id"
+                                            },
+                                            "id": 115,
+                                            "name": "Identifier",
+                                            "src": "1178:2:0"
+                                          }
+                                        ],
+                                        "id": 116,
+                                        "name": "IndexAccess",
+                                        "src": "1168:13:0"
+                                      }
+                                    ],
+                                    "id": 117,
+                                    "name": "MemberAccess",
+                                    "src": "1168:19:0"
+                                  }
+                                ],
+                                "id": 118,
+                                "name": "MemberAccess",
+                                "src": "1168:26:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "playersN",
+                                  "referencedDeclaration": 13,
+                                  "type": "uint256"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct Game.Session storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 27,
+                                          "type": "mapping(uint256 => struct Game.Session storage ref)",
+                                          "value": "sessionsM"
+                                        },
+                                        "id": 119,
+                                        "name": "Identifier",
+                                        "src": "1197:9:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 100,
+                                          "type": "uint256",
+                                          "value": "id"
+                                        },
+                                        "id": 120,
+                                        "name": "Identifier",
+                                        "src": "1207:2:0"
+                                      }
+                                    ],
+                                    "id": 121,
+                                    "name": "IndexAccess",
+                                    "src": "1197:13:0"
+                                  }
+                                ],
+                                "id": 122,
+                                "name": "MemberAccess",
+                                "src": "1197:22:0"
+                              }
+                            ],
+                            "id": 123,
+                            "name": "BinaryOperation",
+                            "src": "1168:51:0"
+                          }
+                        ],
+                        "id": 124,
+                        "name": "FunctionCall",
+                        "src": "1160:60:0"
+                      }
+                    ],
+                    "id": 125,
+                    "name": "ExpressionStatement",
+                    "src": "1160:60:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_address",
+                                  "typeString": "address"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (address) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "member_name": "slots",
+                                  "referencedDeclaration": 11,
+                                  "type": "address[] storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": true,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "type": "struct Game.Session storage ref"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 27,
+                                          "type": "mapping(uint256 => struct Game.Session storage ref)",
+                                          "value": "sessionsM"
+                                        },
+                                        "id": 126,
+                                        "name": "Identifier",
+                                        "src": "1230:9:0"
+                                      },
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 100,
+                                          "type": "uint256",
+                                          "value": "id"
+                                        },
+                                        "id": 127,
+                                        "name": "Identifier",
+                                        "src": "1240:2:0"
+                                      }
+                                    ],
+                                    "id": 128,
+                                    "name": "IndexAccess",
+                                    "src": "1230:13:0"
+                                  }
+                                ],
+                                "id": 129,
+                                "name": "MemberAccess",
+                                "src": "1230:19:0"
+                              }
+                            ],
+                            "id": 130,
+                            "name": "MemberAccess",
+                            "src": "1230:24:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 162,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 131,
+                                "name": "Identifier",
+                                "src": "1255:3:0"
+                              }
+                            ],
+                            "id": 132,
+                            "name": "MemberAccess",
+                            "src": "1255:10:0"
+                          }
+                        ],
+                        "id": 133,
+                        "name": "FunctionCall",
+                        "src": "1230:36:0"
+                      }
+                    ],
+                    "id": 134,
+                    "name": "ExpressionStatement",
+                    "src": "1230:36:0"
+                  }
+                ],
+                "id": 135,
+                "name": "Block",
+                "src": "1096:356:0"
+              }
+            ],
+            "id": 136,
+            "name": "FunctionDefinition",
+            "src": "1047:405:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "name": "withdraw",
+              "payable": false,
+              "scope": 150,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 137,
+                "name": "ParameterList",
+                "src": "1475:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 140,
+                "name": "ParameterList",
+                "src": "1495:0:0"
+              },
+              {
+                "attributes": {
+                  "arguments": [
+                    null
+                  ]
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 43,
+                      "type": "modifier ()",
+                      "value": "ownerOnly"
+                    },
+                    "id": 138,
+                    "name": "Identifier",
+                    "src": "1478:9:0"
+                  }
+                ],
+                "id": 139,
+                "name": "ModifierInvocation",
+                "src": "1478:9:0"
+              },
+              {
+                "attributes": {
+                  "statements": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 141,
+                "name": "Block",
+                "src": "1495:45:0"
+              }
+            ],
+            "id": 142,
+            "name": "FunctionDefinition",
+            "src": "1458:82:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "implemented": true,
+              "isConstructor": false,
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "payable": false,
+              "scope": 150,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 143,
+                "name": "ParameterList",
+                "src": "1623:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 144,
+                "name": "ParameterList",
+                "src": "1626:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "arguments": [
+                            null
+                          ],
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                null
+                              ],
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 166,
+                              "type": "function () pure",
+                              "value": "revert"
+                            },
+                            "id": 145,
+                            "name": "Identifier",
+                            "src": "1636:6:0"
+                          }
+                        ],
+                        "id": 146,
+                        "name": "FunctionCall",
+                        "src": "1636:8:0"
+                      }
+                    ],
+                    "id": 147,
+                    "name": "ExpressionStatement",
+                    "src": "1636:8:0"
+                  }
+                ],
+                "id": 148,
+                "name": "Block",
+                "src": "1626:25:0"
+              }
+            ],
+            "id": 149,
+            "name": "FunctionDefinition",
+            "src": "1614:37:0"
+          }
+        ],
+        "id": 150,
+        "name": "ContractDefinition",
+        "src": "26:1627:0"
+      }
+    ],
+    "id": 151,
+    "name": "SourceUnit",
+    "src": "0:1653:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-02-13T16:12:11.998Z"
+}

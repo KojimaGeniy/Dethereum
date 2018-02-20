@@ -54,7 +54,11 @@ contract Game {
         winner.transfer(reward);
     }
 
-    //function refund half if player disconnected before the start
+    function refund() ownerOnly {
+        //refund if disconnected before the match
+    }
+
+    //need functions setters or whatever to start the game and point the winner
 
     function () {
         revert();

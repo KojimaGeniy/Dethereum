@@ -14,7 +14,7 @@ contract Game {
         uint betValue;
         SessionState currentState;
     }
-    //massive addressov
+    //address array
     Session[] sessions;     //something like this, need to be controlled for overflow
 
     //mapping of struct and var numStructs
@@ -30,7 +30,7 @@ contract Game {
         owner = msg.sender;
     }
 
-    function InitializeSession(uint256 plN,/*players array*/ uint betV) ownerOnly public {
+    function InitializeSession(uint256 plN, uint betV) ownerOnly public {
         Session session;
         session.id = counter + 1;
         session.playersN = plN;
